@@ -25,7 +25,7 @@ export function PriorityColumn({ priority, tasks }: PriorityColumnProps) {
     <div
       ref={setNodeRef}
       className={cn(
-        'flex flex-col flex-1 min-h-0 border-r border-gray-200 dark:border-gray-700 last:border-r-0 transition-colors duration-200',
+        'flex flex-col w-1/3 min-w-0 min-h-0 border-r border-gray-200 dark:border-gray-700 last:border-r-0 transition-colors duration-200',
         isOver && 'bg-blue-50/70 dark:bg-blue-900/20'
       )}
     >

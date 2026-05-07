@@ -123,7 +123,7 @@ export function ActiveTasksPanel() {
         modifiers={[restrictToWindowEdges]}
         measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
       >
-        <div className="flex flex-1 min-h-0">
+        <div className="flex flex-1 min-h-0 overflow-hidden">
           {PRIORITY_ORDER.map((priority) => (
             <PriorityColumn key={priority} priority={priority} tasks={tasksByPriority[priority]} />
           ))}
